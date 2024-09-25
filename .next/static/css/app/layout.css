@@ -699,6 +699,9 @@ video {
 .z-0 {
   z-index: 0;
 }
+.z-10 {
+  z-index: 10;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -767,8 +770,55 @@ video {
   width: 1250px;
   height: 1250px;
 }
+.size-28 {
+  width: 7rem;
+  height: 7rem;
+}
+.size-\[800px\] {
+  width: 800px;
+  height: 800px;
+}
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.size-40 {
+  width: 10rem;
+  height: 10rem;
+}
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.size-14 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.size-3 {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.size-2 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.size-\[1220px\] {
+  width: 1220px;
+  height: 1220px;
+}
 .h-12 {
   height: 3rem;
+}
+.max-h-\[\] {
+  max-height: ;
 }
 .w-full {
   width: 100%;
@@ -782,6 +832,13 @@ video {
 }
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-\[\] {
+  --tw-rotate: ;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 @keyframes ping {
@@ -803,11 +860,26 @@ video {
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
 .flex-col {
   flex-direction: column;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
@@ -853,6 +925,10 @@ video {
 .border-white\/15 {
   border-color: rgb(255 255 255 / 0.15);
 }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -871,6 +947,12 @@ video {
 }
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
+}
+.bg-emerald-300\/20 {
+  background-color: rgb(110 231 183 / 0.2);
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .p-0\.5 {
   padding: 0.125rem;
@@ -928,12 +1010,22 @@ video {
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
 }
+.text-emerald-300 {
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity));
+}
+.text-emerald-300\/20 {
+  color: rgb(110 231 183 / 0.2);
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .opacity-5 {
   opacity: 0.05;
+}
+.opacity-20 {
+  opacity: 0.2;
 }
 .shadow-\[0_0_80px_inset\] {
   --tw-shadow: 0 0 80px inset;
@@ -948,6 +1040,88 @@ video {
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.\[animaion-duration\:30s\] {
+  animaion-duration: 30s;
+}
+.\[animaion-duration\:5s\] {
+  animaion-duration: 5s;
+}
+.\[animation-duration\:100s\] {
+  animation-duration: 100s;
+}
+.\[animation-duration\:1200s\] {
+  animation-duration: 1200s;
+}
+.\[animation-duration\:120s\] {
+  animation-duration: 120s;
+}
+.\[animation-duration\:1800s\] {
+  animation-duration: 1800s;
+}
+.\[animation-duration\:20s\] {
+  animation-duration: 20s;
+}
+.\[animation-duration\:300s\] {
+  animation-duration: 300s;
+}
+.\[animation-duration\:30s\] {
+  animation-duration: 30s;
+}
+.\[animation-duration\:400s\] {
+  animation-duration: 400s;
+}
+.\[animation-duration\:50s\] {
+  animation-duration: 50s;
+}
+.\[animation-duration\:5s\] {
+  animation-duration: 5s;
+}
+.\[animation-duration\:600s\] {
+  animation-duration: 600s;
+}
+.\[animation-duration\:60s\] {
+  animation-duration: 60s;
+}
+.\[mask-image\:linear-gradient\(to_botto\)\] {
+  -webkit-mask-image: linear-gradient(to botto);
+          mask-image: linear-gradient(to botto);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c \)\] {
+  -webkit-mask-image: linear-gradient(to bottom,);
+          mask-image: linear-gradient(to bottom,);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c tr\)\] {
+  -webkit-mask-image: linear-gradient(to bottom,tr);
+          mask-image: linear-gradient(to bottom,tr);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black\)\] {
+  -webkit-mask-image: linear-gradient(to bottom,transparent,black);
+          mask-image: linear-gradient(to bottom,transparent,black);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_10\%\2c \)\] {
+  -webkit-mask-image: linear-gradient(to bottom,transparent,black 10%,);
+          mask-image: linear-gradient(to bottom,transparent,black 10%,);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_10\%\2c black\)\] {
+  -webkit-mask-image: linear-gradient(to bottom,transparent,black 10%,black);
+          mask-image: linear-gradient(to bottom,transparent,black 10%,black);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_10\%\2c black_70\%\)\] {
+  -webkit-mask-image: linear-gradient(to bottom,transparent,black 10%,black 70%);
+          mask-image: linear-gradient(to bottom,transparent,black 10%,black 70%);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_10\%\2c black_70\%\2c transparent\)\] {
+  -webkit-mask-image: linear-gradient(to bottom,transparent,black 10%,black 70%,transparent);
+          mask-image: linear-gradient(to bottom,transparent,black 10%,black 70%,transparent);
+}
+.\[mask-image\:linear-gradient\(to_bottom\2c transparent\2c black_10\%black_70\%\2c transparent\)\] {
+  -webkit-mask-image: linear-gradient(to bottom,transparent,black 10%black 70%,transparent);
+          mask-image: linear-gradient(to bottom,transparent,black 10%black 70%,transparent);
+}
+.\[mask-image\:linear-gradient\] {
+  -webkit-mask-image: linear-gradient;
+          mask-image: linear-gradient;
 }
 
 .hover\:bg-white\/70:hover {
