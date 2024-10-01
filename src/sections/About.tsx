@@ -12,41 +12,74 @@ import ReactIcon from "@/assets/icons/react.svg";
 import NextIcon from "@/assets/icons/nextjs.svg";
 import WebflowIcon from "@/assets/icons/webflow.svg";
 import GitIcon from "@/assets/icons/github.svg";
+import { TechIcon } from "@/components/TechIcon";
+import smileMemoji from "@/assets/images/memoji-smile.png";
 
 const toolboxItems = [
   {
     title: "Javascript",
-    icon: <JavascriptIcon />,
+    iconType: JavascriptIcon,
   },
   {
     title: "HTML5",
-    icon: <HTMLIcon />,
+    iconType: HTMLIcon,
   },
   {
     title: "CSS3",
-    icon: <CSSIcon />,
+    iconType: CSSIcon,
   },
   {
     title: "React",
-    icon: <ReactIcon />,
+    iconType: ReactIcon,
   },
   {
     title: "React Native",
-    icon: <ReactIcon />,
+    iconType: ReactIcon,
   },
   {
     title: "NextJS",
-    icon: <NextIcon />,
+    iconType: NextIcon,
   },
   {
     title: "Webflow",
-    icon: <WebflowIcon />,
+    iconType: WebflowIcon,
   },
   {
     title: "Git",
-    icon: <GitIcon />,
+    iconType: GitIcon,
   },
-]
+];
+
+const hobbies = [
+  {
+    title: "Gaming",
+    emoji: "🎮",
+  },
+  {
+    title: "Photography",
+    emoji: "📸",
+  },
+  {
+    title: "Fitness",
+    emoji: "🏋🏻‍♀️",
+  },
+  {
+    title: "Reading",
+    emoji: "📖",
+  },
+  {
+    title: "Sketching",
+    emoji: "🎨🖌️",
+  },
+  {
+    title: "Trading",
+    emoji: "📊",
+  },
+  {
+    title: "Music",
+    emoji: "🎶",
+  },
+];
 
 export const AboutSection = () => {
   return (
@@ -78,7 +111,8 @@ export const AboutSection = () => {
           <div>
             {toolboxItems.map((item) => (
               <div key={item.title} className="">
-                <span>{item.icon}</span>
+                {/* <span>{item.icon}</span> */}
+                <TechIcon component={item.iconType} />
                 <span>{item.title}</span>
               </div>
             ))}
@@ -94,6 +128,7 @@ export const AboutSection = () => {
         </Card>
         <Card>
           <Image src={mapImage} alt="map" />
+          <Image src={smileMemoji} alt="smile-memoji" />
         </Card>
       </div>
     </div>
