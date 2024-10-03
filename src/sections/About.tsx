@@ -124,7 +124,7 @@ export const AboutSection = () => {
               digital experiences."
                 className=""
               />
-              <ToolboxItems items={toolboxItems} className="mt-6" />
+              <ToolboxItems items={toolboxItems} className="" />
               <ToolboxItems
                 items={toolboxItems}
                 className=""
